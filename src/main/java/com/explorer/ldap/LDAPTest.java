@@ -52,6 +52,8 @@ public class LDAPTest {
         //env.put("com.sun.jndi.ldap.trace.ber", System.err);
         
         InitialDirContext ctx = new InitialDirContext(env);
+        //LdapContext ctx = new InitialLdapContext();
+        
         
         LDAPTest ldap = new LDAPTest();
         
