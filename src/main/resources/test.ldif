@@ -1,0 +1,32 @@
+dn: uid=test10,ou=users,ou=system
+changetype: add
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+userid: test10
+userPassword: test10
+sn: test10
+cn: test10
+
+dn: uid=test2,ou=users,ou=system
+changetype: add
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+userid: test2
+userPassword: test2
+sn: test2
+cn: test2
+
+dn: uid=test3,ou=users,ou=system
+changetype: add
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+userid: test3
+userPassword: test3
+sn: test3
+cn: test3
