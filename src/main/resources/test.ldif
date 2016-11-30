@@ -30,3 +30,15 @@ userid: test3
 userPassword: test3
 sn: test3
 cn: test3
+
+
+dn: uid=test4,ou=users,ou=system
+changetype: add
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+userid: test4
+userPassword: test4
+sn: test4
+cn: test4
