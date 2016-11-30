@@ -11,12 +11,7 @@ import javax.naming.directory.SearchResult;
 import javax.naming.ldap.InitialLdapContext;
 import javax.naming.ldap.LdapContext;
 
-/**
- * Example code for retrieving a Users Primary Group
- * from Microsoft Active Directory via. its LDAP API
- * 
- * @author Adam Retter <adam.retter@googlemail.com>
- */
+
 public class LDAPTest {
 
     /**
@@ -24,7 +19,7 @@ public class LDAPTest {
      */
     public static void main(String[] args) throws NamingException {
         
-        final String ldapAdServer = "ldap://ENT-SMUN6-J0K9.hq.nt.newyorklife.com:1389";
+        final String ldapAdServer = "ldap://localhost:1389";
         final String ldapSearchBase = "ou=users,ou=system";
         
         final String ldapUsername = "uid=admin,ou=system";
@@ -60,6 +55,8 @@ public class LDAPTest {
         //1) lookup the ldap account
         SearchResult srLdapUser = ldap.findAccountByAccountName(ctx, ldapSearchBase, ldapAccountToLookup);
         
+        System.out.println("results "+srLdapUser);
+        ctx.close();
         //2) get the SID of the users primary group
 //        String primaryGroupSID = ldap.getPrimaryGroupSID(srLdapUser);
 //        
