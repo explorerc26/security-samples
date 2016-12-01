@@ -47,6 +47,14 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.unboundid/unboundid-ldapsdk -->
+		<dependency>
+		    <groupId>com.unboundid</groupId>
+		    <artifactId>unboundid-ldapsdk</artifactId>
+		    <version>3.2.0</version>
+		</dependency>
+        
 
     </dependencies>
     <build>
