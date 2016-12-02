@@ -16,7 +16,7 @@ public class LdapClient{
     System.out.println("constructer to LDAP bind");
 		try
         {
-       String url = "ldap://ENT-SMUN6-J0K9.hq.nt.newyorklife.com:1389";
+       String url = "ldap://localhost:1389";
 	   String conntype = "simple";
   	   String AdminDn  = "uid=admin,ou=system";
 	   String password = "secret";
